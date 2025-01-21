@@ -101,7 +101,7 @@ import java.io.*;
 
 		public void display_Map() 
 		{
-			System.out.println("\t Delhi Metro Map");
+			System.out.println("\t Banglore Metro Map");
 			System.out.println("\t------------------");
 			System.out.println("----------------------------------------------------\n");
 			ArrayList<String> keys = new ArrayList<>(vtces.keySet());
@@ -442,46 +442,43 @@ import java.io.*;
 		
 		public static void Create_Metro_Map(Graph_M g)
 		{
-			g.addVertex("Noida Sector 62~B");
-			g.addVertex("Botanical Garden~B");
-			g.addVertex("Yamuna Bank~B");
-			g.addVertex("Rajiv Chowk~BY");
-			g.addVertex("Vaishali~B");
-			g.addVertex("Moti Nagar~B");
-			g.addVertex("Janak Puri West~BO");
-			g.addVertex("Dwarka Sector 21~B");
-			g.addVertex("Huda City Center~Y");
-			g.addVertex("Saket~Y");
-			g.addVertex("Vishwavidyalaya~Y");
-			g.addVertex("Chandni Chowk~Y");
-			g.addVertex("New Delhi~YO");
-			g.addVertex("AIIMS~Y");
-			g.addVertex("Shivaji Stadium~O");
-			g.addVertex("DDS Campus~O");
-			g.addVertex("IGI Airport~O");
-			g.addVertex("Rajouri Garden~BP");
-			g.addVertex("Netaji Subhash Place~PR");
-			g.addVertex("Punjabi Bagh West~P");
-			
-			g.addEdge("Noida Sector 62~B", "Botanical Garden~B", 8);
-			g.addEdge("Botanical Garden~B", "Yamuna Bank~B", 10);
-			g.addEdge("Yamuna Bank~B", "Vaishali~B", 8);
-			g.addEdge("Yamuna Bank~B", "Rajiv Chowk~BY", 6);
-			g.addEdge("Rajiv Chowk~BY", "Moti Nagar~B", 9);
-			g.addEdge("Moti Nagar~B", "Janak Puri West~BO", 7);
-			g.addEdge("Janak Puri West~BO", "Dwarka Sector 21~B", 6);
-			g.addEdge("Huda City Center~Y", "Saket~Y", 15);
-			g.addEdge("Saket~Y", "AIIMS~Y", 6);
-			g.addEdge("AIIMS~Y", "Rajiv Chowk~BY", 7);
-			g.addEdge("Rajiv Chowk~BY", "New Delhi~YO", 1);
-			g.addEdge("New Delhi~YO", "Chandni Chowk~Y", 2);
-			g.addEdge("Chandni Chowk~Y", "Vishwavidyalaya~Y", 5);
-			g.addEdge("New Delhi~YO", "Shivaji Stadium~O", 2);
-			g.addEdge("Shivaji Stadium~O", "DDS Campus~O", 7);
-			g.addEdge("DDS Campus~O", "IGI Airport~O", 8);
-			g.addEdge("Moti Nagar~B", "Rajouri Garden~BP", 2);
-			g.addEdge("Punjabi Bagh West~P", "Rajouri Garden~BP", 2);
-			g.addEdge("Punjabi Bagh West~P", "Netaji Subhash Place~PR", 3);
+			g.addVertex("MG Road~B");
+			g.addVertex("Indiranagar~B");
+			g.addVertex("Baiyappanahalli~B");
+			g.addVertex("Kempegowda Station~B");
+			g.addVertex("Yelachenahalli~B");
+			g.addVertex("Jayanagar~B");
+			g.addVertex("Mysore Road~B");
+			g.addVertex("Kengeri~B");
+			g.addVertex("KR Puram~B");
+			g.addVertex("Banaswadi~B");
+			g.addVertex("Halasuru~B");
+			g.addVertex("Hebbal~B");
+			g.addVertex("Magadi Road~B");
+			g.addVertex("Yelahanka~B");
+			g.addVertex("Peenya~B");
+			g.addVertex("Hennur~B");
+			g.addVertex("Sampige Road~B");
+			g.addVertex("Rajajinagar~B");
+			g.addVertex("Malleshwaram~B");
+
+			g.addEdge("MG Road~B", "Indiranagar~B", 5);
+			g.addEdge("Indiranagar~B", "Baiyappanahalli~B", 6);
+			g.addEdge("Baiyappanahalli~B", "Kempegowda Station~B", 10);
+			g.addEdge("Kempegowda Station~B", "Yelachenahalli~B", 12);
+			g.addEdge("Yelachenahalli~B", "Jayanagar~B", 7);
+			g.addEdge("Jayanagar~B", "Mysore Road~B", 15);
+			g.addEdge("Mysore Road~B", "Kengeri~B", 9);
+			g.addEdge("KR Puram~B", "Banaswadi~B", 4);
+			g.addEdge("Banaswadi~B", "Halasuru~B", 5);
+			g.addEdge("Halasuru~B", "Hebbal~B", 8);
+			g.addEdge("Hebbal~B", "Magadi Road~B", 11);
+			g.addEdge("Magadi Road~B", "Yelahanka~B", 14);
+			g.addEdge("Yelahanka~B", "Peenya~B", 13);
+			g.addEdge("Peenya~B", "Hennur~B", 10);
+			g.addEdge("Hennur~B", "Sampige Road~B", 6);
+			g.addEdge("Sampige Road~B", "Rajajinagar~B", 3);
+			g.addEdge("Rajajinagar~B", "Malleshwaram~B", 2);
 		}
 		
 		public static String[] printCodelist()
